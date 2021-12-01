@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Response {
+  int32 number = 1;
+}
+
+message Request {
+  int32 number = 1;
+}
+
+service Worker {
+    rpc Get(Request) returns (Response) {}
+}
