@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.11)
 project(gRPC_Example)
 
 find_package(protobuf REQUIRED)
-find_package(grpc REQUIRED)
+find_package(gRPC REQUIRED)
 find_package(CLI11 REQUIRED)
 
 add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/protos_out/worker.pb.h
